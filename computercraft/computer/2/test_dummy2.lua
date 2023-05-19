@@ -1,4 +1,4 @@
---PLANE--
+--AIRSHIP--
 os.loadAPI("lib/quaternions.lua")
 
 helm = peripheral.find("ship_helm")
