@@ -13,23 +13,38 @@ This was based on my last project:
 [Minecraft-Omnidirectional-Drone-Controller](https://github.com/19PHOBOSS98/Minecraft-Omnidirectional-Drone-Controller-ValkyrienSkies2-ComputerCraft)
 
 As good as a fighter Mr. Grin is, I needed Sol to have her own themed fighter-crafts. I started off trying to give Ms. Glare something like a "plane-mode" to complement her default "VTOL-mode"
-...I didn't like it. While I was looking for a good background music to sync to for her showcase video I found Cayote Kisses' banger of a song called [Six Shooter](https://youtu.be/Y2shDoIBJIs)
+
+...I didn't like it.
+
+
+While I was looking for a good background music to sync to for her showcase video I found Cayote Kisses' banger of a song called [Six Shooter](https://youtu.be/Y2shDoIBJIs)
 
 (GO CHECK IT OUT!)
 
-So... that's why I spent the whole week coding in an Auto-Targetting system for her :)
+So... that's why I spent the whole week coding in an Auto-Targeting system for her :)
 
-In addition to the Auto-Targetting feature, she also has an ORBIT mode. Instead of staying in place and "glaring" at her targets she can maintain a set distance between them. 
+## FEATURES
 
-With the ORBIT mode she can literally run circles around you.
+### AUTO-TARGETING
+She can account for target velocity and lead her aim. 
 
-ValkyrienSkies2:Computers adds a peripheral called a [Ship Radar](https://github.com/TechTastic/ValkyrienComputers/wiki/Ship-Radar). As the name suggests, I used it along with Create:BigCannons' Autocannons to get this to work.
+If her target is out of range she automatically switches to the next. 
 
-You might notice that the aim drifts a bit while orbiting a target... I think this has to do with the way I set Ms. Glare's PID gains (I haven't set the Integral gains). For now I'm happy with how she came out :)
+Her radar range is set to 500 blocks.
+
+If she can't find any ships within the radar range she automatically turns off auto-targetting
+
+### ORBIT MODE
+In addition to the Auto-Targeting feature, she also has an ORBIT mode. Instead of staying in place and "glaring" at her targets she can maintain a set distance between them. 
+
+With the ORBIT mode she can literally run circles around you. 
+
+Try and fly away, she will follow. Stop to rest, she will wait right there with you...
 
 ## The Handicaps That I Had To Overcome
-###CBC:AUTOCANNON BULLET VELOCITY
+### CBC:AUTOCANNON BULLET VELOCITY
 So to get it to aim right, I needed to know how fast the Create:Autocannon projectiles travel. After digging thru the addon's code and asking around Reddit:
+[I made a post](https://www.reddit.com/r/feedthebeast/comments/13iqmys/whats_the_createbig_cannons_projectile_speed/)
 
 I found out that:
 
@@ -38,6 +53,11 @@ I found out that:
 (minecraft_tick = 0.05sec)
 
 I also found that Autocannon projectiles don't experience the effects of gravity or drag so they travel in a straight line without slowing down.
+
+## NOTES
+ValkyrienSkies2:Computers adds a peripheral called a [Ship Radar](https://github.com/TechTastic/ValkyrienComputers/wiki/Ship-Radar). As the name suggests, I used it along with Create:BigCannons' Autocannons to get this to work.
+
+You might notice that the aim drifts a bit while orbiting a target... I think this has to do with the way I set Ms. Glare's PID gains (I haven't set the Integral gains). For now I'm happy with how she came out :)
 
 ## Prerequisits
 You might need to read up on these topics before diving in the code. Here are some videos that should help you get started:
@@ -55,7 +75,7 @@ You might need to read up on these topics before diving in the code. Here are so
 
 ### **!!!!USE AT YOUR OWN RISK, MAKE BACK UPS!!!!**
 
-Prepare the game to use atleast **8GB** of RAM by setting the JVM Arguments in the Minecraft Launcher
+Prepare the game to use atleast **12GB** of RAM by setting the JVM Arguments in the Minecraft Launcher
 
 ### COMPUTERCRAFT FOLDERS
 
