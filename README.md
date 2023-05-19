@@ -1,6 +1,6 @@
 # Minecraft-Aim-Assisted-Ship-Controller-ValkyrienSkies2-ComputerCraft
 
-[Download the Map and Mod pack From PlanetMinecraft]()
+[Download the Map and Mod pack From PlanetMinecraft](https://www.planetminecraft.com/project/ms-glare-the-lens-flare-valkyrien-skies-2-create-computercraft/)
 
 ## Ms. Glare The LENS-FLARE
 [YouTube Video](https://youtu.be/taD_ttDTe9o)
