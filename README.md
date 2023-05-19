@@ -17,7 +17,11 @@ As good as a fighter Mr. Grin is, I needed Sol to have her own themed fighter-cr
 
 (GO CHECK IT OUT!)
 
-So... that's why I spent the whole week coding in an auto targetting system for her :)
+So... that's why I spent the whole week coding in an Auto-Targetting system for her :)
+
+In addition to the Auto-Targetting feature, she also has an ORBIT mode. Instead of staying in place and "glaring" at her targets she can maintain a set distance between them. 
+
+With the ORBIT mode she can literally run circles around you.
 
 ValkyrienSkies2:Computers adds a peripheral called a [Ship Radar](https://github.com/TechTastic/ValkyrienComputers/wiki/Ship-Radar). As the name suggests, I used it along with Create:BigCannons' Autocannons to get this to work.
 
@@ -56,10 +60,6 @@ Prepare the game to use atleast **8GB** of RAM by setting the JVM Arguments in t
 ### COMPUTERCRAFT FOLDERS
 
 Folder 0: For the Wireless Pocket Computer.
-
-Folder 2: Dummy Airship Computer
-
-Folder 3: Dummy Plane Computer
 
 Folder 4: For the Create Link Controller setup (0scorcher_remote_armed.nbt)
 
