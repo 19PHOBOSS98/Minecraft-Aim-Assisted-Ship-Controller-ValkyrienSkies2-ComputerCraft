@@ -12,8 +12,28 @@
 This was based on my last project:
 [Minecraft-Omnidirectional-Drone-Controller](https://github.com/19PHOBOSS98/Minecraft-Omnidirectional-Drone-Controller-ValkyrienSkies2-ComputerCraft)
 
+As good as a fighter Mr. Grin is, I needed Sol to have her own themed fighter-crafts. I started off trying to give Ms. Glare something like a "plane-mode" to complement her default "VTOL-mode"
+...I didn't like it. While I was looking for a good background music to sync to for her showcase video I found Cayote Kisses' banger of a song called [Six Shooter](https://youtu.be/Y2shDoIBJIs)
+
+(GO CHECK IT OUT!)
+
+So... that's why I spent the whole week coding in an auto targetting system for her :)
+
+ValkyrienSkies2:Computers adds a peripheral called a [Ship Radar](https://github.com/TechTastic/ValkyrienComputers/wiki/Ship-Radar). As the name suggests, I used it along with Create:BigCannons' Autocannons to get this to work.
+
+You might notice that the aim drifts a bit while orbiting a target... I think this has to do with the way I set Ms. Glare's PID gains (I haven't set the Integral gains). For now I'm happy with how she came out :)
+
 ## The Handicaps That I Had To Overcome
-Imma be honest, it wasn't easy for me to pull this off. 
+###CBC:AUTOCANNON BULLET VELOCITY
+So to get it to aim right, I needed to know how fast the Create:Autocannon projectiles travel. After digging thru the addon's code and asking around Reddit:
+
+I found out that:
+
+`Autocannon_projectile_velocity = barrel_length/minecraft_tick`
+
+(minecraft_tick = 0.05sec)
+
+I also found that Autocannon projectiles don't experience the effects of gravity or drag so they travel in a straight line without slowing down.
 
 ## Prerequisits
 You might need to read up on these topics before diving in the code. Here are some videos that should help you get started:
