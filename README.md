@@ -5,8 +5,8 @@
 ## Ms. Glare The LENS-FLARE
 [YouTube Video](https://youtu.be/taD_ttDTe9o)
 
-![2023-05-15_18 24 47](https://github.com/19PHOBOSS98/Minecraft-Aim-Assisted-Ship-Controller-ValkyrienSkies2-ComputerCraft/assets/37253663/005d3817-2475-418b-8ec3-4b74fe054505)
 
+![2023-05-15_18 28 56](https://github.com/19PHOBOSS98/Minecraft-Aim-Assisted-Ship-Controller-ValkyrienSkies2-ComputerCraft/assets/37253663/84d8458f-e5d1-473b-9320-ededc380cfd5)
 
 
 This was based on my last project:
